@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>readme</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Secure login - PHP, MySQL</h1>
+        <p>(Allegedly) Against SQL injections, session hijacking, network eavesdropping, cross site scripting and brute force attacks.</p>
+        <p>This script is ripped from a unofficial programming guide. Performance may vary.</p>
+        <p>http://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL</p>  
+        
+<h2>Tips</h2>
+<p>With very few changes these example scripts can be modified to work with other SQL systems such as SQLite or PostgreSQL.<br /><br />
+If you're wanting to use a different hashing algorithm rather than sha512, try Whirlpool. Avoid using Gost, sha1 (Unless thoroughly salted and in multiple iterations), and as already stated, md5. Encourage your users to create strong, unique passwords with both uppercase and lowercase letters, numbers, and symbols. Consider having your users create a separate login name from their username for added security.<br /><br />
+Use HTML and CSS to format the login form and output pages to your liking.<br /><br />
+Stay away from the md5() function in login scripts, the md5 hashing algorithm is now considered insecure.</p>
+
+<br /><br />
+
+<h2>Warnings</h2>
+<p>The login page and the Registration page must use HTTPS. The scripts in this article do not force you to do this and, indeed, you may find it easier not to during development. But you should not use these scripts in a production environment unless you are using HTTPS.<br /><br />
+Make sure that the user cannot see your PHP script, which may occur due to an incorrect server setup. There is a possibility of the users gathering information about your database names and passwords if your PHP code is visible. Ideally any scripts that are included in other scripts or pages should be located in a directory outside of the server's file system and referenced using a relative path e.g. include '../../includes/myscript.inc.php'.<br /><br />
+Nothing is 100% secure. Remember to stay in tune with the latest security news to keep improving the security of your scripts.<br /><br />
+The Anti Brute Force of this script, that locks a user account, can be misused very easily. We strongly recommend that you use an anti-brute force technique such as a CAPTCHA.<br /><br />
+You may get a better solution than this by using a framework such as Zend 2, Symfony or CakePHP. All of these frameworks have arrangements for secure sessions and modules to assist with the login process. You may also find you write better applications if you use a framework.<br /><br />
+The use of a CAPTCHA on the login page is highly recommended to make brute force and DoS attacks more difficult. We recommend that the CAPTCHA appear on the form after two failed login attempts. This is not yet implemented in the example code.</p>
+
+<br /><br />
+
+    </body>
+</html>
